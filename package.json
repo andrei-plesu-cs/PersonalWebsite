@@ -1,0 +1,14 @@
+{
+  "name": "portofoliowebsite",
+  "version": "1.0.0",
+  "description": "Portofolio Website of Plesoianu Andrei-Bogdan",
+  "main": "assets/javascript/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Plesoianu Andrei-Bogdan",
+  "license": "ISC",
+  "devDependencies": {
+    "sal.js": "^0.6.1"
+  }
+}
