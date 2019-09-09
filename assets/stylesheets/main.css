@@ -598,6 +598,11 @@ footer i:hover {
         font-size: 90% !important;
     }
 
+    .more-information span {
+        margin: 10px !important;
+        font-size: 80% !important;
+    }
+
     .heading-div {
         margin-bottom: 15px !important;
     }
@@ -609,7 +614,7 @@ footer i:hover {
     .col-title {
         font-size: 1.5rem !important;
         margin-bottom: 0px !important;
-        margin-top: 20px;
+        margin-top: 10px;
     }
 
     .more-info-dis {
@@ -620,26 +625,6 @@ footer i:hover {
         margin-top: 20px;
     }
 
-    .my-col .bottom-buttons {
-        margin-top: 50px;
-        width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-    }
-    
-    .my-col .bottom-buttons button {
-        width: 90% !important;
-        margin-top: 10px;
-        font-size: 1.2rem;
-        background-color: transparent !important;
-        border: 2px solid black;
-        border-color: #c3073f;
-        color: #c3073f;
-        padding: 10px 20px;
-    }
 
     .hidden-images {
         display: none;
@@ -684,8 +669,8 @@ footer i:hover {
     }
 
     #profile-pic {
-        width: 200px;
-        height: 200px;
+        width: 140px;
+        height: 140px;
         margin-bottom: 0;
         margin-top: 5px;
     }
@@ -708,7 +693,7 @@ footer i:hover {
     }
 
     .tech-used-line {
-        margin-bottom: 30px !important;
+        margin-bottom: 15px !important;
         margin-top: 15px !important;
         line-height: 40px;
     }
@@ -722,6 +707,55 @@ footer i:hover {
     #projects-header-text {
         font-size: 4rem !important;
     }
+
+    .my-col .bottom-buttons {
+        margin-top: 0px !important;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    
+    .my-col .bottom-buttons button {
+        width: 100% !important;
+        margin-top: 7px;
+        font-size: .8rem !important;
+        background-color: transparent !important;
+        border: 1px solid black;
+        border-color: #c3073f;
+        color: #c3073f;
+        padding: 10px 20px !important;
+    }
+
+    p#tech-used {
+        margin-top: 30px !important;
+    }
+
+    .tech-used-line {
+        width: 120%;
+        margin-left: -10%;
+    }
+
+    .tech-used-container .label {
+        font-size: .7rem !important;
+        margin-right: 0px !important;
+    }
+
+    .tech-used-container .tech-used-line {
+        line-height: 25px !important;
+    }
+
+    .inner-container h2 {
+        font-size: 1.5rem !important;
+        margin-bottom: 15px !important;
+    }
+
+    #description {
+        font-size: .8rem !important;
+    }
+
     /* end of projects section */
 
     .cv-button button {
@@ -729,6 +763,8 @@ footer i:hover {
         width: 80% !important;
         margin-left: 10% !important;
         margin-right: 10% !important;
+        padding: 10px 15px !important;
+        font-size: .8rem !important;
     }
 
     .skill-column {
@@ -785,6 +821,10 @@ footer i:hover {
         margin-left: 5% !important;
         margin-right: 5% !important;
         padding: 10px 25px !important;
+    }
+
+    .black-contact {
+        margin-top: 120px !important;
     }
 
     /* Footer section */
