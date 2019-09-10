@@ -50,7 +50,7 @@
                         </div>
                         <div class="col-content text-left">
                             <span>If you like my work and maybe want to get in contact so we could build something together...</span>
-                            <span>...leave your email and maybe a short description of your idea and I will reach to you as soon as possible</span>
+                            <span class="more-info-dis">...leave your email and maybe a short description of your idea and I will reach to you as soon as possible</span>
                             <form class="more-info-dis">
                                 <input type="email" class="form-control" placeholder="Email" style="margin-bottom: 7px;"/>
                                 <textarea placeholder="Message" cols="20" class="form-control" style="margin-bottom: 10px; height: 120px;"></textarea>
@@ -100,26 +100,20 @@
     </div>
 
     <!-- About me section right here -->
-    <div class="full-size my-container gradient-background" id="about">
+    <div class="full-size my-container gradient-background" id="about"
+            data-sal-duration="600"
+            data-sal="zoom-in"
+            data-sal-delay="50"
+            data-sal-easing="ease-out-bounce">
         <div class="whole-container">
             <div class="about-container text-center" >
                 <h2 style="font-weight: bold; font-family: 'Poppins', sans-serif; font-size: 2.5rem; color: black;"
-                    data-sal-duration="800"
-                    data-sal="zoom-in"
-                    data-sal-delay="200"
-                    data-sal-easing="ease-out-bounce"
+                    
                     >About me</h2>
-                <img src="./assets/images/profile-pic.jpg" alt="Profile pic" id="profile-pic" class="rounded-circle"
-                    data-sal-duration="800"
-                    data-sal="zoom-in"
-                    data-sal-delay="400"
-                    data-sal-easing="ease-out-bounce">
+                <img src="./assets/images/profile_pic_protoflio.JPG" alt="Profile pic" id="profile-pic" class="rounded-circle"
+                    >
                 <hr />
                 <div class="sub-image"
-                    data-sal-duration="1000"
-                    data-sal="slide-left"
-                    data-sal-delay="300"
-                    data-sal-easing="ease-out-bounce"
                     >
                     <p>I'm <strong>Andrei</strong> and I am curently doing a <i>Computer Science</i> degree at University Politehnica in Bucharest, Romania.</p>
                     <p>This year I've developed a mad passion for <strong>full-stack</strong> web developpment and so I've started learning how to <strong>design</strong> and <strong>code</strong> web apps with <i>Angular</i> as my favourite framework on the
@@ -128,10 +122,6 @@
                 </div>
 
                 <div class="cv-button"
-                    data-sal-duration="1000"
-                    data-sal="fade"
-                    data-sal-delay="300"
-                    data-sal-easing="ease-out-bounce"
                     >
                     <button type="button" class="btn btn-md"><i class="far fa-file-alt" style="margin-right: 5px;"></i>Check CV</button>
                 </div>
@@ -142,21 +132,19 @@
 
     <!-- Skills section bellow -->
     <div class="container-fluid" style="font-family: 'Poppins', sans-serif; margin-top: 50px; padding-top: 100px; padding-bottom: 50px;" id="skills">
-        <div class="row" style="margin-bottom: 300px;" id="skills-total">
+        <div class="row" style="margin-bottom: 300px;" id="skills-total"
+                data-sal-duration="500"
+                data-sal="slide-up"
+                data-sal-delay="0"
+                data-sal-easing="ease-out-bounce">
             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 more-info-dis"
-                    data-sal-duration="700"
-                    data-sal="slide-right"
-                    data-sal-delay="200"
-                    data-sal-easing="ease-out-bounce">
+                    >
                 <div style="width: 80%; margin-left: 10%; margin-right: 10%">
                     <canvas id="canvasFront"></canvas>
                 </div>
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12"
-                    data-sal-duration="700"
-                    data-sal="slide-left"
-                    data-sal-delay="200"
-                    data-sal-easing="ease-out-bounce">
+                    >
                 <div style="width: 80%; margin-left: 0; margin-right: 20%;" class="skill-column">
                     <div style="width: 100%; text-align: center;">
                         <h2 style="font-weight: bold; font-size: 3rem;" id="skills-header">Front end experience</h2>
@@ -192,13 +180,14 @@
             </div>
         </div>
 
-        <div class="row" style="margin-bottom: 300px;" id="skills-total">
+        <div class="row" style="margin-bottom: 300px;" id="skills-total"
+                data-sal-duration="500"
+                data-sal="slide-up"
+                data-sal-delay="0"
+                data-sal-easing="ease-out-bounce">
             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                 <div style="width: 80%; margin-left: 20%; margin-right: 0" class="skill-column"
-                        data-sal-duration="700"
-                        data-sal="slide-right"
-                        data-sal-delay="200"
-                        data-sal-easing="ease-out-bounce">
+                        >
                     <div style="width: 100%; text-align: center;">
                         <h2 style="font-weight: bold; font-size: 3rem;" id="skills-header">Back end experience</h2>
                         <div>
@@ -231,10 +220,7 @@
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 more-info-dis">
                 <div style="width: 80%; margin-left: 10%; margin-right: 10%"
-                        data-sal-duration="700"
-                        data-sal="slide-left"
-                        data-sal-delay="200"
-                        data-sal-easing="ease-out-bounce">
+                        >
                     <canvas id="canvasBack"></canvas>
                 </div>
             </div>
@@ -256,9 +242,18 @@
             <div class="mySlides">
                 <div class="row">
                     <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 hidden-images">
-                        <img src="./assets/images/becca-tapert-lA7OhpEMRug-unsplash.jpg" alt="Image" style="top: 120px; left: 130px;" class="myImage"/>
-                        <img src="./assets/images/bench-accounting-nvzvOPQW0gc-unsplash.jpg" alt="Image" style="top: 260px; left: 230px;" class="myImage"/>
-                        <img src="./assets/images/edgar-castrejon-CX8ooha2yLA-unsplash.jpg" alt="Image" style="top: 400px; left: 330px;" class="myImage"/>
+                        <!-- <picture>
+                            <source media="(max-width: 767px)" srcset="./assets/images/nothing.jpg" />
+                            <img src="./assets/images/becca-tapert-lA7OhpEMRug-unsplash.jpg" alt="Image" style="top: 120px; left: 130px;" class="myImage"/>
+                        </picture>
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="" />
+                            <img src="./assets/images/bench-accounting-nvzvOPQW0gc-unsplash.jpg" alt="Image" style="top: 260px; left: 230px;" class="myImage"/>
+                        </picture>
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="" />
+                            <img src="./assets/images/edgar-castrejon-CX8ooha2yLA-unsplash.jpg" alt="Image" style="top: 400px; left: 330px;" class="myImage"/>
+                        </picture> -->
                     </div>
                     <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 my-col">
                         <div class="inner-container">
@@ -432,30 +427,24 @@
 
 
     <!-- The footer of the page -->
-    <footer>
+    <footer
+            data-sal-duration="600"
+            data-sal="slide-up"
+            data-sal-delay="50"
+            data-sal-easing="ease-out-bounce">
         <hr />
         <div style="width: 100%; text-align: center; font-size: 1.2rem;" id="footer-find-me">
             <span
-                data-sal-duration="600"
-                data-sal="slide-up"
-                data-sal-delay="200"
-                data-sal-easing="ease-out-bounce"
             >Find me also on other platforms</span>
         </div>
         <div class="icons" style="width: 100%; text-align: center; font-size: 2.2rem; margin-bottom: 35px; word-spacing: 1rem;"
-                data-sal-duration="600"
-                data-sal="slide-up"
-                data-sal-delay="250"
-                data-sal-easing="ease-out-bounce">
+                >
             <i class="fab fa-linkedin" style="color: #0077B5;"></i>
             <i class="fab fa-github" style="color: #333;"></i>
             <i class="fab fa-facebook-square" style="color: #3C5A99;"></i>
         </div>
         <div class="container text-center"
-                data-sal-duration="800"
-                data-sal="slide-up"
-                data-sal-delay="250"
-                data-sal-easing="fade">
+                >
             <span>Copyright &copy; 2019 <strong>Plesoianu Andrei-Bogdan</strong></span>
         </div>
     </footer>

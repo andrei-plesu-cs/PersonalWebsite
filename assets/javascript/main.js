@@ -3,6 +3,8 @@
 //adding an event to wait till window completes loading
 window.onload = function() {
 
+    console.log('aici');
+
     //on init the navbar elements are white
     document.querySelector('.navbar .navbar-brand span').style.color = 'white';
     document.getElementsByClassName('first-line')[0].style.backgroundColor = 'white';
@@ -14,49 +16,43 @@ window.onload = function() {
     TweenMax.from('#heading', 2, { css: {
         y: -100,
         autoAlpha: 0,
-        ease: Expo.easeOut
-    }})
+    }, ease: Expo.easeOut})
 
     tw
         .from('.my-container h1', 2, { css: {
             delay: .5,
             x: -200,
-            autoAlpha: 0,
-            ease: Expo.easeOut
-        }})
+            autoAlpha: 0
+        }, ease: Expo.easeOut})
         .add('my-label')
         .from('#sub-heading', 1.5, { css: {
             x: 200,
-            autoAlpha: 0,
-            ease: Expo.easeOut
-        }}, 'my-label-=0.9')
+            autoAlpha: 0
+        }, ease: Expo.easeOut}, 'my-label-=0.9')
         .from('.header-button', 2.5, {css: {
-            autoAlpha: 0,
-            ease: Expo.easeOut
-        }}, 'my-label+=0.5');
-
-
-    let doc = document.documentElement;
-    let navbar_element = document.getElementsByTagName('nav')[0];
-
-    //scroll event
-    window.onscroll = function() {
-
-        let top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
-
-        if ((top+40) > window.innerHeight) {
-            document.querySelector('.navbar .navbar-brand span').style.color = 'black';
-            document.getElementsByClassName('first-line')[0].style.backgroundColor = 'black';
-            document.getElementsByClassName('second-line')[0].style.backgroundColor = 'black';
-        } else {
-            document.querySelector('.navbar .navbar-brand span').style.color = 'white';
-            document.getElementsByClassName('first-line')[0].style.backgroundColor = 'white';
-            document.getElementsByClassName('second-line')[0].style.backgroundColor = 'white';
-        }
-
-    }
+            autoAlpha: 0
+        }, ease: Expo.easeOut}, 'my-label+=0.5');
 
 };
+
+const doc = document.documentElement;
+
+//scroll event
+window.onscroll = function() {
+
+    let top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
+
+    if ((top+40) > window.innerHeight) {
+        document.querySelector('.navbar .navbar-brand span').style.color = 'black';
+        document.getElementsByClassName('first-line')[0].style.backgroundColor = 'black';
+        document.getElementsByClassName('second-line')[0].style.backgroundColor = 'black';
+    } else {
+        document.querySelector('.navbar .navbar-brand span').style.color = 'white';
+        document.getElementsByClassName('first-line')[0].style.backgroundColor = 'white';
+        document.getElementsByClassName('second-line')[0].style.backgroundColor = 'white';
+    }
+
+}
 
 //use the sal module
 sal();
@@ -126,9 +122,19 @@ for(let i=0; i<info_buttons.length; i++) {
 item.addEventListener('click', function() {
     
     if (isClicked) {
-        document.querySelector('.navbar .navbar-brand span').style.color = 'black';
-        document.getElementsByClassName('first-line')[0].style.backgroundColor = 'black';
-        document.getElementsByClassName('second-line')[0].style.backgroundColor = 'black';
+
+        let top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
+
+        if ((top+40) > window.innerHeight) {
+            document.querySelector('.navbar .navbar-brand span').style.color = 'black';
+            document.getElementsByClassName('first-line')[0].style.backgroundColor = 'black';
+            document.getElementsByClassName('second-line')[0].style.backgroundColor = 'black';
+        } else {
+            document.querySelector('.navbar .navbar-brand span').style.color = 'white';
+            document.getElementsByClassName('first-line')[0].style.backgroundColor = 'white';
+            document.getElementsByClassName('second-line')[0].style.backgroundColor = 'white';
+        }
+
         this.className = "animate-me my-div-animate";
         more_info.style.display = 'none';
 

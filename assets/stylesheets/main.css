@@ -8,7 +8,6 @@ html, body {
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden;
 }
 
 body {
@@ -330,7 +329,7 @@ body {
 
 /* Projects cover */
 .projectCover {
-    background-image: url('../images/khai-sze-ong-ipyxkiJtdYI-unsplash.jpg');
+    background-image: url('../images/porjects-cover.jpg');
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -604,11 +603,11 @@ footer i:hover {
     }
 
     .heading-div {
-        margin-bottom: 15px !important;
+        margin-bottom: 10px !important;
     }
 
     .heading-div span {
-        font-size: 90% !important;
+        font-size: 70% !important;
     }
 
     .col-title {
@@ -624,7 +623,6 @@ footer i:hover {
     .media-icons {
         margin-top: 20px;
     }
-
 
     .hidden-images {
         display: none;
