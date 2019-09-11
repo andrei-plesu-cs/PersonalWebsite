@@ -143,13 +143,17 @@ body {
     color: black !important;
 }
 
-.cv-button button {
+.cv-button {
+    margin-top: 30px;
+}
+
+.cv-button a {
     width: 30%;
     margin-left: 35%;
     margin-right: 35%;
     background-color: transparent;
+    border: 1px solid #41b3a3;
     color: #41b3a3;
-    border-color: #41b3a3;
     margin-top: 70px;
     padding: 12px 15px;
     font-size: 1.2rem;
@@ -183,10 +187,11 @@ body {
     }
 }
 
-.cv-button button:hover {
+.cv-button a:hover {
     background-color: rgb(65, 179, 163);
     color: #fff;
     animation: none;
+    text-decoration: none;
 }
 
 /* The slideshow */
@@ -756,8 +761,14 @@ footer i:hover {
 
     /* end of projects section */
 
-    .cv-button button {
-        margin-top: 10px;
+    .cv-button {
+        margin-top: 5px;
+        width: 80% !important;
+        margin-left: 10% !important;
+        margin-right: 10% !important;
+    }
+
+    .cv-button a {
         width: 80% !important;
         margin-left: 10% !important;
         margin-right: 10% !important;
@@ -854,7 +865,7 @@ footer i:hover {
         width: 90% !important;
     }
 
-    .cv-button button {
+    .cv-button a {
         width: 80% !important;
         margin-left: 10% !important;
         margin-right: 10% !important;
