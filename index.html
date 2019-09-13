@@ -13,6 +13,10 @@
 </head>
 <body>
 
+    <div class="email-success-popup email-display-none">
+        <span id="popup-text">The message was sent with success :D</span>
+    </div>
+
     <div class="more-information">
         <div class="container" style="z-index: 250;">
             <div class="heading-div more-info-dis" style="width: 100%; text-align: center; margin-bottom: 90px;">
@@ -28,7 +32,7 @@
                             <span>Hi, I'm <strong>Andrei</strong>, an aspiring full stack developer from Bucharest, Romania.</span>
                             <span>I am curently doing a Computer Science degree at University Politehnica in Bucharest. </span>
                             <span class="more-info-dis">Besides coding, I am also a fan of design, photography, tennis and guitar playing. So I could say that my motto would be curiosity itself...</span>
-                            <span class="more-info-dis">...so that would be me. If you want more info though, check my <a href="#">CV</a> or <a href="#">this</a> section.</span>
+                            <span class="more-info-dis">...so that would be me. If you want more info though, check my <a href="https://www.dropbox.com/s/d9jgraywzeom808/cv.9.11.2019.engleza.pdf?dl=0">CV</a> or <a href="#about">this</a> section.</span>
                         </div>
                     </div>
                 </div>
@@ -39,7 +43,7 @@
                        </div>
                         <div class="col-content text-left">
                             <span>Check out some of the most important projects I have worked on up to this point...</span>
-                            <span class="more-info-dis">...or check the complete list of my personal projects by clicking <a href="#">This</a></span>
+                            <span class="more-info-dis">...or check the complete list of my personal projects by clicking <a href="#projects">This</a></span>
                         </div>
                    </div>
                 </div>
@@ -54,7 +58,7 @@
                             <form class="more-info-dis">
                                 <input type="email" class="form-control" placeholder="Email" style="margin-bottom: 7px;"/>
                                 <textarea placeholder="Message" cols="20" class="form-control" style="margin-bottom: 10px; height: 120px;"></textarea>
-                                <button type="button" class="btn btn-md">Send</button>
+                                <button type="button" class="btn btn-md" id="more-info-button">Send</button>
                             </form>
                             <span class="more-info-dis">Thanks for your input :)</span>
                         </div>    
@@ -62,9 +66,9 @@
                 </div>
             </div>
             <div class="media-icons text-center">
-                <i class="fab fa-linkedin"></i>
-                <i class="fab fa-github"></i>
-                <i class="fab fa-facebook-square"></i>
+                <a class="brand" href="https://www.linkedin.com/in/andrei-plesoianu-b31b62192/"><i class="fab fa-linkedin"></i></a>
+                <a class="brand" href="https://github.com/andrei-plesu-cs"><i class="fab fa-github"></i></a>
+                <a class="brand" href="https://www.facebook.com/plesoianu.andrei.5"><i class="fab fa-facebook-square"></i></a>
             </div>
         </div>
     </div>
@@ -192,8 +196,8 @@
                     <div style="width: 100%; text-align: center;">
                         <h2 style="font-weight: bold; font-size: 3rem;" id="skills-header">Back end experience</h2>
                         <div>
-                            <span style="color: gray; margin-top: 20px; display: block; font-size: 1.2rem;" id="skills-text">I work with Angular as the primary framework to develop high quality SPA apps, or just with vanilla Javascript
-                                if a normal Server Side Rendered app is prefered. I also use Bootstrap or Materialize heavily for design purposes.
+                            <span style="color: gray; margin-top: 20px; display: block; font-size: 1.2rem;" id="skills-text">On the back end I prefer using Node and Express.js,as for the databases,
+                                I mainly work with MongoDB, and in some cases I use either Redis or PostgreSQL. However, if a full server implementation is not mandatory, I use serverless solutions such as Firebase or GCP.
                             </span>
                         </div>
                         <div class="skills-labels">
@@ -278,8 +282,8 @@
                             </div>
 
                             <div class="bottom-buttons">
-                                <button type="button" class="btn btn-md"><i class="fas fa-laptop-code"></i>Check Source</button>
-                                <button type="button" class="btn btn-md"><i class="fas fa-laptop"></i>Try the app</button>
+                                <button type="button" class="btn btn-md"><a class="brand red-link" href="https://github.com/andrei-plesu-cs/Gimify"><i class="fas fa-laptop-code"></i>Check Source</a></button>
+                                <button type="button" class="btn btn-md"><a class="brand red-link" href="https://gymify-app.herokuapp.com/"><i class="fas fa-laptop"></i>Try the app</a></button>
                             </div>
                         </div>
                     </div>
@@ -317,8 +321,8 @@
                             </div>
 
                             <div class="bottom-buttons">
-                                <button type="button" class="btn btn-md"><i class="fas fa-laptop-code"></i>Check Source</button>
-                                <button type="button" class="btn btn-md"><i class="fas fa-laptop"></i>Try the app</button>
+                                <button type="button" class="btn btn-md"><a class="brand red-link" href="https://github.com/andrei-plesu-cs/HoolieChat"><i class="fas fa-laptop-code"></i>Check Source</a>></button>
+                                <button type="button" class="btn btn-md"><a class="brand red-link" href="https://hoolie-chat-client.herokuapp.com/login"><i class="fas fa-laptop"></i>Try the app</a></button>
                             </div>
                         </div>
                     </div>
@@ -332,12 +336,12 @@
                     </div>
                     <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 my-col">
                         <div class="inner-container">
-                            <h2 id="myCompassTitle"><span style="color: #ee4c7c;">my</span>Compass</h2>
+                            <h2 id="myCompassTitle"><span style="color: #ee4c7c;">Web</span>Portfolio</h2>
                             <hr />
-                            <p id="description">A <i>replica</i> of AirBnb made for the purpose of <span class="light-purple">using APIs</span>, such as <span class="light-purple">Geolocation API</span> for
-                                finding the <i>exact position</i> of the current user, <span class="light-purple">Geocode API</span> which translates <i>coordinates</i> to an <i>address</i> and most importantly,
-                                the <span class="light-purple">Google Maps API</span>, which <i>maps</i> locations based on their <i>coordinates</i>. Also, there is some <span class="light-purple">vanilla javascript</span> for some of the
-                                functionalities. Again, I've used <i>Angular</i> and <i>Bootstrap</i> on the front end, and <i>Firebase</i> on the back end.
+                            <p id="description">My <i>Personal Website</i> through which I showcase the work I have done as a web developer. The website was made
+                                with <i>pure</i> vanilla <span class="light-purple">Javascript</span>, <span class="light-purple">HTML</span> and <span class="light-purple">CSS</span>. Also, I used the <span class="light-purple">GSAP</span> and <span class="light-purple">Sal.js</span> libraries for
+                                animations and <span class="light-purple">JQuery</span> for both scroll animations and ajax request to send the data from the forms through the <i>Nodemailer</i> API. The <i>server</i>
+                                was implemented using <span class="light-purple">Node</span> and <span class="light-purple">Express</span>.
                             </p>
 
                             <div class="tech-used-container">
@@ -346,16 +350,16 @@
                                     <span class="label">Html</span>
                                     <span class="label">Css</span>
                                     <span class="label">Bootstrap</span>
-                                    <span class="label">Angular</span>
-                                    <span class="label">Typescript</span>
-                                    <span class="label">Firebase</span>
-                                    <span class="label">Google APIs</span>
+                                    <span class="label">GSAP</span>
+                                    <span class="label">JQuery</span>
+                                    <span class="label">Node</span>
+                                    <span class="label">Express</span>
                                 </div>
                             </div>
 
                             <div class="bottom-buttons">
-                                <button type="button" class="btn btn-md"><i class="fas fa-laptop-code"></i>Check Source</button>
-                                <button type="button" class="btn btn-md"><i class="fas fa-laptop"></i>Try the app</button>
+                                <button type="button" class="btn btn-md"><a class="brand red-link" href="https://github.com/andrei-plesu-cs/PortofolioWebsite"><i class="fas fa-laptop-code"></i>Check Source</a></button>
+                                <button type="button" class="btn btn-md"><a class="brand red-link" href="https://www.andreiplesuweb.com"><i class="fas fa-laptop"></i>Try the app</a></button>
                             </div>
                         </div>
                     </div>
@@ -400,13 +404,13 @@
                 <div style="text-align: center; width: 100%; color: #fff; font-weight: bolder; margin-bottom: 50px; margin-top: -15px;" id="fill-info-div">
                     Just fill in the fields bellow and that's it
                 </div>
-                <form>
+                <form method="POST" action="http://localhost:8080/receive-data">
                     <div class="row">
                         <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 text-right">
                             <i class="fas fa-envelope" style="color: #fff; margin-top: 15px; font-size: 1.5rem;"></i>
                         </div>
                         <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11">
-                            <input type="text" placeholder="Email" class="form-control form-control-lg" />
+                            <input type="email" placeholder="Email" class="form-control form-control-lg" name="email" id="email" />
                         </div>
                     </div>
     
@@ -415,11 +419,11 @@
                             <i class="fas fa-sticky-note" style="color: #fff; margin-top: 15px; font-size: 1.5rem;"></i>
                         </div>
                         <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11">
-                            <textarea cols="20" rows="10" class="form-control form-control-lg" placeholder="Describe your idea"></textarea>
+                            <textarea cols="20" rows="10" class="form-control form-control-lg" placeholder="Describe your idea" name="description" id="description"></textarea>
                         </div>
                     </div>
                 
-                    <button type="button" class="btn btn-lg contact-button"><i class="fas fa-paper-plane" style="margin-right: 10px;"></i>Send</button>
+                    <button type="button" id="submit_button" class="btn btn-lg contact-button"><i class="fas fa-paper-plane" style="margin-right: 10px;"></i>Send</button>
                     
                 </form>
             </div>
@@ -440,9 +444,9 @@
         </div>
         <div class="icons" style="width: 100%; text-align: center; font-size: 2.2rem; margin-bottom: 35px; word-spacing: 1rem;"
                 >
-            <i class="fab fa-linkedin" style="color: #0077B5;"></i>
-            <i class="fab fa-github" style="color: #333;"></i>
-            <i class="fab fa-facebook-square" style="color: #3C5A99;"></i>
+            <a class="brand" href="https://www.linkedin.com/in/andrei-plesoianu-b31b62192/"><i class="fab fa-linkedin" style="color: #0077B5;"></i></a>
+            <a class="brand" href="https://github.com/andrei-plesu-cs"><i class="fab fa-github" style="color: #333;"></i></a>
+            <a class="brand" href="https://www.facebook.com/plesoianu.andrei.5"><i class="fab fa-facebook-square" style="color: #3C5A99;"></i></a>
         </div>
         <div class="container text-center"
                 >

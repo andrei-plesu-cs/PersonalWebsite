@@ -92,8 +92,7 @@ function showSlides(n) {
     TweenMax.from(currentSlide, 1.5, {css: {
         autoAlpha: 0,
         scale: 0.6,
-        ease: Power2.easeOut
-    }});
+    }, ease: Power2.easeOut});
 
     dots[slideIndex-1].className += " active";
 }

@@ -15,6 +15,32 @@ body {
     overflow-x: hidden;
 }
 
+.email-success-popup {
+    position: fixed;
+    opacity: 1;
+    display: block;
+    bottom: 0;
+    left: 0;
+    padding: 1.5rem;
+    font-weight: bold;
+    background-color: #1a1a1d;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    z-index: 500;
+    box-shadow: -3px -3px 7px rgba(0,0,0,0.3);
+}
+
+.email-white-color {
+    color: #1a1a1d !important;
+    background-color: #fff !important;
+}
+
+.email-display-none {
+    display: none !important;
+}
+
 .my-container h1 {
     color: #c3073f;
     font-weight: bold;
@@ -917,4 +943,18 @@ footer i:hover {
 	background-color: #000000;
 }
 
+a.brand {
+    text-decoration: none;
+}
 
+a.brand:hover {
+    text-decoration: none;
+}
+
+a.red-link {
+    color: #950740 !important;
+}
+
+a.red-link:active {
+    color: #fff !important;
+}
